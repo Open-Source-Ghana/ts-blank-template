@@ -1,0 +1,45 @@
+{
+  "name": "ts-blank-template",
+  "version": "1.0.0",
+  "description": "This is a starter template for a simple typescript project.",
+  "main": "src/index.ts",
+  "scripts": {
+    "dev": "npx nodemon",
+    "test": "npx jest dist/test",
+    "start": "clear && npx ts-node src/index.ts",
+    "build": "npx tsc",
+    "git": "npm run build; git add . && git commit",
+    "prepare": "npx husky-init && npm install&& husky install",
+    "prettier": "npx prettier --check src *.md *.json",
+    "prettier:fix": "npx prettier src *.md *.json --write",
+    "lint": "npx eslint src",
+    "lint:fix": "npx eslint src --fix",
+    "format": "npm run prettier:fix && npm run lint:fix"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/Open-Source-Ghana/ts-blank-template.git"
+  },
+  "keywords": [
+    "ts",
+    "typescript",
+    "ts-starter-template",
+    "template"
+  ],
+  "author": "https://github.com/Open-Source-Ghana",
+  "license": "MIT",
+  "devDependencies": {
+    "@babel/preset-typescript": "^7.16.7",
+    "@types/jest": "^27.4.0",
+    "@typescript-eslint/eslint-plugin": "^5.9.1",
+    "@typescript-eslint/parser": "^5.9.1",
+    "eslint": "^8.6.0",
+    "eslint-config-prettier": "^8.3.0",
+    "husky": "^7.0.0",
+    "jest": "^27.4.7",
+    "nodemon": "^2.0.15",
+    "prettier": "^2.5.1",
+    "ts-node": "3.3.0",
+    "typescript": "3.3.3333"
+  }
+}

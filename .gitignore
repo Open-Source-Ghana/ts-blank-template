@@ -1,0 +1,10 @@
+.vscode
+node_modules
+dist
+.env
+.idea/
+build/
+tmp/
+temp/
+.env
+.husky
