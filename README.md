@@ -8,13 +8,13 @@ This is a [starter template][ts-blank-template] for a simple typescript project.
 - `cd ts-starter-template`
 - `npm i` to install the packages
 - `npm run prepare` to setup husky for git pre-commit
-    add the following at the end of `.husky/pre-commit`
-    ```
-    npm run format
-    npm run prettier
-    npm run lint
-    npm test
-    ```
+  add the following at the end of `.husky/pre-commit`
+  ```
+  npm run format
+  npm run prettier
+  npm run lint
+  npm test
+  ```
 - `npm run dev` to run the project in development mode
 - `npm run format` to format code
 - `npm run git` to format, add and commit in the interactive mode
